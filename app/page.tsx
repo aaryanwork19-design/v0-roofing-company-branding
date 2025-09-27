@@ -26,14 +26,16 @@ export default function HomePage() {
             <Button variant="ghost" className="text-foreground">
               Warranty
             </Button>
-            <Button className="bg-primary text-primary-foreground">Book Free Inspection</Button>
+            <Button className="bg-[var(--cta)] text-[var(--cta-foreground)] hover:bg-[var(--cta)]/90">
+              Book Free Inspection
+            </Button>
           </div>
         </div>
       </header>
 
       <Hero />
 
-      <section id="services" className="mx-auto max-w-6xl px-4 py-12 md:py-16">
+      <section id="services" className="mx-auto max-w-6xl px-4 py-12 md:py-16 bg-card rounded-lg border">
         <h2 className="text-pretty text-3xl md:text-4xl font-semibold mb-6">
           Roofing services built for storms and savings
         </h2>
@@ -48,7 +50,7 @@ export default function HomePage() {
         <USPWarranty />
       </section>
 
-      <section id="testimonials" className="mx-auto max-w-6xl px-4 py-12 md:py-16">
+      <section id="testimonials" className="mx-auto max-w-6xl px-4 py-12 md:py-16 bg-card rounded-lg border">
         <h2 className="text-pretty text-3xl md:text-4xl font-semibold mb-6">Homeowners trust SkyGuard</h2>
         <Testimonials />
       </section>

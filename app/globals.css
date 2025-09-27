@@ -4,31 +4,33 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #f8fafc; /* Cloud White */
-  --foreground: #111827; /* Charcoal */
-  --card: #f8fafc;
-  --card-foreground: #111827;
+  --background: #e2e8f0; /* Main background */
+  --foreground: #0f172a; /* Text */
+
+  --card: #f8fafc; /* Alternate section background */
+  --card-foreground: #0f172a;
+
   --popover: #f8fafc;
   --popover-foreground: #111827;
 
-  --primary: #1e40af; /* Deep Sky Blue – trust */
+  --primary: #1e3a8a;
   --primary-foreground: #f8fafc;
 
-  --secondary: #22c55e; /* Eco Green – efficiency */
-  --secondary-foreground: #111827;
+  --secondary: #16a34a;
+  --secondary-foreground: #0f172a;
 
-  --muted: #f8fafc; /* reuse background as muted */
-  --muted-foreground: rgba(17, 24, 39, 0.7); /* neutral w/ alpha */
+  --muted: #f8fafc; /* keep as alternate background */
+  --muted-foreground: rgba(15, 23, 42, 0.7);
 
-  --accent: #facc15; /* Sun Yellow – solar */
-  --accent-foreground: #111827;
+  --accent: #f59e0b;
+  --accent-foreground: #0f172a;
 
   --destructive: #facc15; /* avoid adding extra colors; not used */
 
   /* Derived tokens constrained to palette */
-  --border: rgba(17, 24, 39, 0.12); /* neutral w/ alpha */
-  --input: rgba(17, 24, 39, 0.12);
-  --ring: #1e40af; /* primary */
+  --border: rgba(15, 23, 42, 0.12);
+  --input: rgba(15, 23, 42, 0.12);
+  --ring: #1e3a8a;
 
   /* Charts limited to palette */
   --chart-1: var(--primary);
@@ -48,6 +50,10 @@
   --sidebar-accent-foreground: #111827;
   --sidebar-border: rgba(17, 24, 39, 0.12);
   --sidebar-ring: #1e40af;
+
+  /* CTA highlight tokens */
+  --cta: #2563eb;
+  --cta-foreground: #f8fafc;
 }
 
 .dark {
@@ -58,23 +64,23 @@
   --popover: #111827;
   --popover-foreground: #f8fafc;
 
-  --primary: #1e40af;
+  --primary: #1e3a8a;
   --primary-foreground: #f8fafc;
 
-  --secondary: #22c55e;
+  --secondary: #16a34a;
   --secondary-foreground: #111827;
 
   --muted: #111827;
   --muted-foreground: rgba(248, 250, 252, 0.7);
 
-  --accent: #facc15;
+  --accent: #f59e0b;
   --accent-foreground: #111827;
 
   --destructive: #facc15;
 
   --border: rgba(248, 250, 252, 0.16); /* background w/ alpha */
   --input: rgba(248, 250, 252, 0.16);
-  --ring: #1e40af;
+  --ring: #1e3a8a;
 
   --chart-1: var(--primary);
   --chart-2: var(--secondary);
@@ -90,6 +96,9 @@
   --sidebar-accent-foreground: #111827;
   --sidebar-border: rgba(248, 250, 252, 0.16);
   --sidebar-ring: #1e40af;
+
+  --cta: #2563eb;
+  --cta-foreground: #f8fafc;
 }
 
 @theme inline {
@@ -131,6 +140,10 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  /* CTA token in theme map for convenience */
+  --color-cta: var(--cta);
+  --color-cta-foreground: var(--cta-foreground);
 }
 
 @layer base {

@@ -29,7 +29,7 @@ export default function CTABanner() {
               Book a free inspection. We’ll assess storm risks and energy-saving opportunities.
             </p>
           </div>
-          <Button size="lg" className="bg-primary text-primary-foreground">
+          <Button size="lg" className="bg-[var(--cta)] text-[var(--cta-foreground)] hover:bg-[var(--cta)]/90">
             Book Free Inspection
           </Button>
         </div>
