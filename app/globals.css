@@ -4,14 +4,14 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #e2e8f0; /* Main background */
-  --foreground: #0f172a; /* Text */
+  --background: #0f172a; /* Main background */
+  --foreground: #e2e8f0; /* Text */
 
-  --card: #f8fafc; /* Alternate section background */
-  --card-foreground: #0f172a;
+  --card: #111827; /* Alternate section background */
+  --card-foreground: #f8fafc;
 
-  --popover: #f8fafc;
-  --popover-foreground: #111827;
+  --popover: #111827;
+  --popover-foreground: #f8fafc;
 
   --primary: #1e3a8a;
   --primary-foreground: #f8fafc;
@@ -19,8 +19,8 @@
   --secondary: #16a34a;
   --secondary-foreground: #0f172a;
 
-  --muted: #f8fafc; /* keep as alternate background */
-  --muted-foreground: rgba(15, 23, 42, 0.7);
+  --muted: #111827; /* keep as alternate background */
+  --muted-foreground: rgba(248, 250, 252, 0.7);
 
   --accent: #f59e0b;
   --accent-foreground: #0f172a;
@@ -28,27 +28,27 @@
   --destructive: #facc15; /* avoid adding extra colors; not used */
 
   /* Derived tokens constrained to palette */
-  --border: rgba(15, 23, 42, 0.12);
-  --input: rgba(15, 23, 42, 0.12);
+  --border: rgba(248, 250, 252, 0.16); /* background w/ alpha */
+  --input: rgba(248, 250, 252, 0.16);
   --ring: #1e3a8a;
 
   /* Charts limited to palette */
   --chart-1: var(--primary);
   --chart-2: var(--secondary);
   --chart-3: var(--accent);
-  --chart-4: #111827; /* neutral */
-  --chart-5: #f8fafc; /* background */
+  --chart-4: #f8fafc; /* neutral */
+  --chart-5: #111827; /* background */
 
   --radius: 0.625rem;
 
   /* Sidebar tokens mapped to palette */
-  --sidebar: #f8fafc;
-  --sidebar-foreground: #111827;
+  --sidebar: #111827;
+  --sidebar-foreground: #f8fafc;
   --sidebar-primary: #1e40af;
   --sidebar-primary-foreground: #f8fafc;
   --sidebar-accent: #facc15;
   --sidebar-accent-foreground: #111827;
-  --sidebar-border: rgba(17, 24, 39, 0.12);
+  --sidebar-border: rgba(248, 250, 252, 0.16);
   --sidebar-ring: #1e40af;
 
   /* CTA highlight tokens */
